@@ -1,0 +1,233 @@
+*{
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	background: url("../resources/horizontal.jpg") no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: cursive;
+	text-align: center;
+	line-height: 2;
+}
+
+nav {
+	display: flex;
+	background-color: #294674;
+	justify-content: space-around;
+	min-height: 6vh;
+}
+
+.logo {
+	width: 120px;
+	height: auto;  
+}
+
+.enlaces-menu {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+li.principal {
+	padding: 6px 2px;
+	border-radius: 10px;
+	border: 1px dashed #000;
+}
+
+li.principal:hover {
+	background-color: rgba(0,0,0,0.6);
+}
+
+li a {
+	color: gold;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+}
+
+ul ul {
+	display: none;
+}
+
+li:hover ul {
+	display: block;
+	position: relative;
+}
+
+p.salida {
+	border-radius: 5px;
+	position: absolute;
+	font-size: 100%;
+	margin-top: 10px;
+	width: 100%;
+	color: #fff;
+}
+
+#diaSemana {
+	background-color: #AD50E8;
+}
+
+#mostrarHora {
+	background-color: orange;
+}
+
+#boton-classroom {
+	position: absolute;
+	background-color: #1883ba;
+	border: 1px solid #0016b0;
+	border-radius: 5px;
+	font-size: 100%;
+	color: #fff;
+	margin-top: 9px;
+	width: 100%;
+}
+
+#boton-classroom:hover {
+	background-color: #fff;
+	color: #1883ba;
+}
+
+#boton-ingles {
+	position: absolute;
+	background-color: orchid;
+	border: 1px solid #B303ED;
+	border-radius: 5px;
+	font-size: 100%;
+	color: #fff;
+	margin-top: 9px;
+	width: 100%;
+}
+
+#boton-ingles:hover {
+	background-color: #fff;
+	color: orchid;
+}
+
+.ham {
+	display: none;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
+
+.ham span {
+	background-color: #fff;
+	display: flex;
+	height: 3px;
+	width: 30px;
+	margin: 10px auto;
+	border-radius: 2px;  
+}
+
+#informacion {
+	background-color: rgba(60,255,60, 0.9);
+	border: 8px groove green;
+	font-family: sans;
+	font-size: 2em;
+}
+
+.itsjc{
+	position: unset;
+	width: 15%;
+}
+
+.isc{
+	position: unset;
+	width: 16%;
+}
+
+.footer {
+	background-color: #000;
+	position: all;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+}
+
+.footer_p {
+	font-size: 12px;
+	color: #fff;
+}
+
+.footer_p a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer_p a:hover {
+	color: lime;
+}
+
+/* DISPOSITIVOS MOVILES */
+@media screen and (max-width: 768px) {
+	body{
+		background: url("../resources/vertical.jpg") no-repeat center center scroll;
+		background-size: cover;
+		line-height: 2;
+	}
+
+	nav {
+		height: 70px;
+	}
+
+	.enlaces-menu {
+		display: none;
+		width: 100%;
+		height: 80%;
+		flex-direction: column;
+		justify-content: space-between;
+		background: #414141;
+		position: absolute;
+		top: 70px;
+	}
+
+	.enlaces-menu li {
+		width: 100%;
+	}
+
+	.ham {
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 30px;
+	}
+
+	#informacion {
+		font-family: serif;
+		font-size: 1.4em;
+	}
+}
+
+/* ANIMACIONES */
+@keyframes muestraMenu {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.enlaces-menu.activado {
+	display: flex;
+	animation: muestraMenu 0.5s ease-in-out both;
+}
+
+.br-1.animado {
+	transform: rotate(-45deg) translate(-10px, 8px);
+	transition: 0.2s;
+}
+
+.br-2.animado {
+	opacity: 0;
+}
+
+.br-3.animado {
+	transform: rotate(45deg) translate(-10px, -8px);
+	transition: 0.2s;
+}

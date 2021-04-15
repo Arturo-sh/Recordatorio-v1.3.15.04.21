@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Horario 402-A</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/estiloTabla.css">
+    <link rel="stylesheet" href="icons/css/table.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<header>
+        <nav>
+            <a href="#"><img class="logo" src="resources/logo.png" alt="logo"></a>
+
+            <ul class="enlaces-menu">
+                <li class="principal"><a href="index.html"><span class="icon-home-1"></span>Principal</a></li>
+				<li class="principal"><a href="tabla.html"><span class="icon-grid"></span>Horario 402-A</a></li>
+				<li class="principal"><a href="#"><span class="icon-calendar"></span>Día de la semana</a>
+					<ul>
+						<li>
+						<p class="salida" id="diaSemana"></p>
+						</li>
+					</ul>
+				</li>
+				<li class="principal"><a href="#"><span class="icon-book"></span>Materia actual</a>
+					<ul>
+						<li>
+						<p class="salida" id="materiaActual"></p>
+						</li>
+					</ul>
+				</li>
+				<li class="principal"><a href="#"><span class="icon-clock-1"></span>Hora local</a>
+					<ul>
+						<li>
+						<p class="salida" id="mostrarHora"></p>
+						</li>
+					</ul>
+				</li>
+				<li class="principal"><a href="#"><span class="icon-clipboard"></span>Classroom</a>
+					<ul>
+						<li>
+						<p><a id="boton-classroom" href="https://classroom.google.com/h" target="_blank">Classroom</a></p>
+						</li>
+					</ul>
+				</li>
+				<li class="principal"><a href="#"><span class="icon-videocam"></span>Clase de Inglés</a>
+					<ul>
+						<li>
+						<p><a id="boton-ingles" href="https://zoom.us/j/94986742099?pwd=djRoM0F2cEZqbzR2dnBCQmpqR0hTZz09" target="_blank">Clase de Inglés</a></p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+            <button class="ham" type="button">   
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>                       
+        </nav>
+    </header>
+
+	<div id="info">
+	<table>
+		<tr>
+			<td class="hora">HORA</td>
+			<td class="hora">LUNES</td>
+			<td class="hora">MARTES</td>
+			<td class="hora">MIÉRCOLES</td>
+			<td class="hora">JUEVES</td>
+			<td class="hora">VIERNES</td>
+		</tr>
+		<tr>
+			<td class="hora">13:00 - 14:00</td>
+			<td class="horasLibres">*</td>
+			<td class="ingles">INGLÉS</td>
+			<td class="metodosNumericos">MÉTODOS NUMÉRICOS</td>
+			<td class="ingles">INGLÉS</td>
+			<td class="horasLibres">*</td>
+		</tr>
+		<tr>
+			<td class="hora">14:00 - 15:00</td>
+			<td class="horasLibres">*</td>
+			<td class="ingles">INGLÉS</td>
+			<td class="metodosNumericos">MÉTODOS NUMÉRICOS</td>
+			<td class="ingles">INGLÉS</td>
+			<td class="horasLibres">*</td>
+		</tr>
+		<tr>
+			<td class="hora">15:00 - 16:00</td>
+			<td class="fundamentosDeBD">FUNDAMENTOS DE BASE DE DATOS</td>
+			<td class="fundamentosDeBD">FUNDAMENTOS DE BASE DE DATOS</td>
+			<td class="fundamentosDeBD">FUNDAMENTOS DE BASE DE DATOS</td>
+			<td class="ecuacionesDiferenciales">ECUACIONES DIFERENCIALES</td>
+			<td class="horasLibres">*</td>
+		</tr>
+		<tr>
+			<td class="hora">16:00 - 17:00</td>
+			<td class="fundamentosDeBD">FUNDAMENTOS DE BASE DE DATOS</td>
+			<td class="fundamentosDeBD">FUNDAMENTOS DE BASE DE DATOS</td>
+			<td class="ecuacionesDiferenciales">ECUACIONES DIFERENCIALES</td>
+			<td class="principiosElectricos">PRINCIPIOS ELÉCTRICOS Y APLICACIONES DIGITALES</td>
+			<td class="ecuacionesDiferenciales">ECUACIONES DIFERENCIALES</td>
+		</tr>
+		<tr>
+			<td class="hora">17:00 - 18:00</td>
+			<td class="metodosNumericos">MÉTODOS NUMÉRICOS</td>
+			<td class="tallerDeSO">TALLER DE SISTEMAS OPERATIVOS</td>
+			<td class="ecuacionesDiferenciales">ECUACIONES DIFERENCIALES</td>
+			<td class="principiosElectricos">PRINCIPIOS ELÉCTRICOS Y APLICACIONES DIGITALES</td>
+			<td class="ecuacionesDiferenciales">ECUACIONES DIFERENCIALES</td>
+		</tr>
+		<tr>
+			<td class="hora">18:00 - 19:00</td>
+			<td class="metodosNumericos">MÉTODOS NUMÉRICOS</td>
+			<td class="tallerDeSO">TALLER DE SISTEMAS OPERATIVOS</td>
+			<td class="horasLibres">*</td>
+			<td class="principiosElectricos">PRINCIPIOS ELÉCTRICOS Y APLICACIONES DIGITALES</td>
+			<td class="metodosNumericos">MÉTODOS NUMÉRICOS</td>
+		</tr>
+		<tr>
+			<td class="hora">19:00 - 20:00</td>
+			<td class="topicosAvanzados">TÓPICOS AVANZADOS DE PROGRAMACIÓN</td>
+			<td class="topicosAvanzados">TÓPICOS AVANZADOS DE PROGRAMACIÓN</td>
+			<td class="horasLibres">*</td>
+			<td class="tallerDeSO">TALLER DE SISTEMAS OPERATIVOS</td>
+			<td class="principiosElectricos">PRINCIPIOS ELÉCTRICOS Y APLICACIONES DIGITALES</td>
+		</tr>
+		<tr>
+			<td class="hora">20:00 - 21:00</td>
+			<td class="topicosAvanzados">TÓPICOS AVANZADOS DE PROGRAMACIÓN</td>
+			<td class="topicosAvanzados">TÓPICOS AVANZADOS DE PROGRAMACIÓN</td>
+			<td class="topicosAvanzados">TÓPICOS AVANZADOS DE PROGRAMACIÓN</td>
+			<td class="tallerDeSO">TALLER DE SISTEMAS OPERATIVOS</td>
+			<td class="principiosElectricos">PRINCIPIOS ELÉCTRICOS Y APLICACIONES DIGITALES</td>
+		</tr>
+	</table>
+	</div>
+
+	<footer class="footer">
+        <p class="footer_p">
+        GitHub<span class="icon-github-circled-alt2"></span> | &copy; Copyright 2021 | <a href="#"> Arturo Salas Hernández</a>
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="js/date.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>

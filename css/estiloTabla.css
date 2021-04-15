@@ -1,0 +1,72 @@
+table{
+	width: 100%;
+	text-align: center;
+	font-family: cursive;
+	border-collapse: separate;
+	border: 1.5vh groove #32B702;
+	table-layout: fixed;
+	font-size: 15px;
+	margin: 5px 0;
+}
+
+table tr td{
+	border-radius: 10px;
+	padding: 2px 0;
+}
+
+.hora{
+	background-color: silver;
+}
+
+.horasLibres{
+	background-image: url("../resources/relleno.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.ingles{
+	background: orchid;
+}
+
+.fundamentosDeBD{
+	background: crimson;
+}
+
+.ecuacionesDiferenciales{
+	background: darkturquoise;
+}
+
+.principiosElectricos{
+	background: darkorchid;
+}
+
+.metodosNumericos{
+	background: chocolate;
+}
+
+.tallerDeSO{
+	background: limegreen;
+}
+
+.topicosAvanzados{
+	background: orange;
+}
+
+#info{
+	height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	table{
+		height: 90vh;
+		font-size: 8px;
+		font-family: cursive;
+		border: 5px groove #32B702;
+	}
+	
+	.footer_p {
+		font-size: 15px;
+	}
+}
